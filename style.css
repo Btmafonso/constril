@@ -1,0 +1,137 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #000; /* Fundo preto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 100px; /* Ajusta o tamanho conforme necessário */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    text-align: justify;
+}
+
+.bem-vindo h1, .servicos-home h2, .sobre h2, .contato h2 {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.bem-vindo p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.servicos-home {
+    background-color: #f0f0f0;
+}
+
+.servicos-imagens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.servico {
+    text-align: left;
+}
+
+.servico img {
+    width: 150px;
+    height: auto;
+}
+
+.servico p {
+    margin-top: 10px;
+}
+
+/* Formulário de contato */
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato form input, .contato form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contato form input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mapa */
+.mapa {
+    margin-top: 40px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .servicos-imagens {
+        flex-direction: column;
+    }
+}
